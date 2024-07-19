@@ -1,37 +1,42 @@
-/* Estilos para a seção principal */
-section {
-    max-width: 90%; /* Ajusta a largura máxima para 70% */
-    margin: auto; /* Centraliza a seção na página */
-    margin-top: 15px; /* Espaçamento superior da seção */
-    border-bottom: 12px solid rgb(116, 27, 58); /* Borda inferior da seção */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza os elementos verticalmente */
-}
-
 .blk1, .blk2, .blk3 {
     display: flex;
-    justify-content: flex-start; /* Alinha à esquerda */
-    width: 115%; /* Largura total do bloco */
-    margin-bottom: 18px; /* Espaçamento entre os blocos */
+    justify-content: start;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-top: 15px;
 }
 
 .title {
-    width: 30%; /* Largura do bloco de título */
-    text-align: center; /* Alinha o texto à direita */
-    padding-right: 10px; /* Espaçamento entre o título e o conteúdo */
+    width: 22%;
+    text-align: right;
+    padding-right: 10px;
 }
 
 .content, .content1, .content2 {
-    width: 50%; /* Largura do bloco de conteúdo */
-    text-align: center; /* Alinhamento central do texto */
-    background-color: rgba(170, 166, 166, 0.442); /* Cor de fundo */
-    padding: 10px; /* Espaçamento interno */
-    box-sizing: border-box; /* Modelo de caixa para dimensionamento */
-    border-radius: 5px; /* Arredondamento dos cantos */
+    width: 70%; /* Tamanho fixo de 70% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(170, 166, 166, 0.442);
+    padding: 1px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    word-wrap: break-word;
+    overflow: hidden;
+    min-height: 35px; /* Define uma altura mínima para uniformidade */
 }
 
 .content span, .content1 span, .content2 span {
-    display: block; 
-    text-align: center; /* Alinha o texto dentro dos spans ao centro */
+    width: 780px; /* Ocupa todo o espaço disponível */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.content1 span, .content2 span {
+    width: 780px; /* Ocupa todo o espaço disponível */
+    text-align: center; /* Alinha o texto ao centro */
+    padding-left: 165px;
+}
+
+.separacao{
+    border-bottom: 12px solid rgb(116, 27, 58);
 }
